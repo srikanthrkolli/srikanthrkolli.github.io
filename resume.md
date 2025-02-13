@@ -1,7 +1,6 @@
 # Resume Highlights
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
-
   <!-- Left Section (Research & Connections) -->
   <div style="flex: 1; min-width: 300px; text-align: left;">
     <h2>📚 Connect & Access My Research</h2>
