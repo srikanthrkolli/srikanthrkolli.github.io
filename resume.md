@@ -2,11 +2,13 @@
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
   
-  <div style="flex: 1; text-align: justify;">
-  Connect/access my research at the following
-- <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="16"> [LinkedIn](https://www.linkedin.com/in/srikanth-r-kolli/)
-- 📖 [ResearchGate](https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli)
-- 🌐 [ORCID ID](https://orcid.org/0009-0005-2196-9632)
+    <!-- Left Section -->
+  <div style="flex: 1; text-align: left;">
+    <h2> Connect/access my research at the following</h2>
+    <ul>
+      <li>📖 <a href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli">ResearchGate</a></li>
+      <li>🌐 <a href="https://orcid.org/0009-0005-2196-9632">ORCID ID</a></li>
+    </ul>
   </div>
 
   <div style="flex: 1; text-align: right;">
