@@ -5,50 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Sai Srikanth R. Kolli</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
+            padding: 40px;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #333;
+            text-align: center;
+            font-weight: 600;
         }
         .flex-container {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
+            padding: 20px 0;
         }
         .left, .right {
             flex: 1;
-            min-width: 300px;
-            padding: 10px;
+            min-width: 320px;
+            padding: 20px;
         }
-        .left {
-            text-align: left;
-        }
-        .right {
-            text-align: right;
+        .right img {
+            width: 220px;
+            border-radius: 20px;
+            display: block;
+            margin: auto;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         li {
-            margin: 5px 0;
+            margin: 8px 0;
         }
         a {
-            color: #0073b1;
+            color: #0071e3;
             text-decoration: none;
             font-weight: bold;
         }
@@ -56,12 +61,13 @@
             text-decoration: underline;
         }
         .icon {
-            width: 16px;
+            width: 20px;
             vertical-align: middle;
-            margin-right: 5px;
+            margin-right: 8px;
         }
         h3 {
-            margin-top: 20px;
+            margin-top: 30px;
+            font-weight: 600;
         }
         h4 {
             font-size: 1rem;
@@ -72,9 +78,8 @@
 <body>
 
     <div class="container">
-        <h1>Sai Srikanth R. Kolli - Resume Highlights</h1>
+        <h1>Sai Srikanth R. Kolli</h1>
         
-        <!-- Connect & Access Research Section -->
         <div class="flex-container">
             <div class="left">
                 <h2> Connect & Access My Research</h2>
@@ -87,92 +92,31 @@
                     <li>🌐 <a href="https://orcid.org/0009-0005-2196-9632" target="_blank">ORCID ID</a></li>
                 </ul>
             </div>
-
             <div class="right">
-                <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="200" style="border-radius: 10px; max-width: 100%;">
+                <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli">
             </div>
         </div>
 
-        <!-- Education & Certifications Section -->
+        <h2>Education & Certifications</h2>
         <div class="flex-container">
             <div class="left">
-                <h2> Education & Certifications</h2>
-                
-                <h3>School of Systems Science and Industrial Engineering (SSIE), Binghamton University (SUNY), NY, USA</h3>
+                <h3>School of Systems Science and Industrial Engineering</h3>
                 <ul>
                     <li><strong>PhD in Industrial and Systems Engineering</strong> (Ongoing)</li>
                     <li><strong>Masters in Industrial and Systems Engineering</strong> (May 2023)</li>
                 </ul>
-                
-                <h3>École Centrale School of Engineering, Mahindra University, Hyderabad, India</h3>
+                <h3>École Centrale School of Engineering</h3>
                 <ul>
                     <li><strong>Bachelor's in Mechanical Engineering</strong> (May 2019)</li>
                 </ul>
-                
-                <h2> Certifications</h2>
-                <ul>
-                    <li>
-                        <a href="https://www.credly.com/badges/6532569c-adce-42e9-8ae3-ad8d014df99c?source=linked_in_profile" target="_blank">
-                            Project Management Essentials by Binghamton University (Jan 2022)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.credly.com/badges/37f8ac2c-b8c4-4496-9c16-7a049eebc9b0/public_url" target="_blank">
-                            Microsoft Certified: Azure AI Fundamentals (Oct 2024)
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="right">
-                <h2> Professional Career</h2>
-
-                <h3>Graduate Research Assistant & Project Manager</h3>
-                <h4>Watson Institute for Systems Excellence (WISE), Binghamton University (SUNY), NY, USA</h4>
-                
-                <h3>Department of Business Development & Supply Chain Operations</h3>
-                <h4>Foxconn Industrial Internet (FII), Wisconsin, USA</h4>
-                <ul>
-                    <li>Conducted onsite research to resolve supply chain challenges.</li>
-                    <li>Developed a streamlined procedure for work order closures using data analytics and lean methodologies.</li>
-                    <li>Proposed an SAP and web-based automated solution for material adjustments, reducing line-down situations.</li>
-                    <li>Defined KPIs to assess supplier and freight forwarder performance, optimizing logistics operations.</li>
-                    <li>Automated shipment creation using DMAIC, significantly reducing processing time.</li>
-                    <li>Designed an interactive UI for quotation generation using Activity-Based Costing (ABC) and lean principles, leading to reduced lead time and cost savings.</li>
-                </ul>
             </div>
         </div>
-
-        <!-- Conference Presentations & Leadership Section -->
+        
+        <h2>Professional Career</h2>
         <div class="flex-container">
             <div class="left">
-                <h2> Conference Presentations</h2>
-                
-                <h3>SMTA International Conference (Chicago, Illinois, USA)</h3>
-                <ul>
-                    <li><strong>Predicting Delivery Reliability of Logistics Forwarders:</strong> A Machine Learning Approach for Forwarder Selection and Evaluation Process (Oct 2024)</li>
-                </ul>
-
-                <h3>Institute of Industrial and Systems Engineers (IISE) Conference (Montreal, Canada)</h3>
-                <ul>
-                    <li><strong>Designing a Resilience Logistics Network Using Metaheuristics</strong> (May 2024)</li>
-                </ul>
-
-                <h3>Society for Industrial and Systems Engineering (SISE) Virtual Conference</h3>
-                <ul>
-                    <li><strong>Predicting On-time Delivery of Material in Electronics Manufacturing Industries</strong> (Oct 2023)</li>
-                    <li><strong>Automation of Quotation Generation in Manufacturing Industries</strong> (Oct 2022)</li>
-                </ul>
-            </div>
-
-            <div class="right">
-                <h2> Leadership</h2>
-                <ul>
-                    <li> <strong>Member</strong>, Alpha Pi Mu Industrial Engineering Honor Society, Binghamton Chapter</li>
-                    <li> <strong>Technical Advisory Committee (TAC) Member</strong>, SMTA International</li>
-                    <li> <a href="http://binghamton.edu/ssie/graduate/ambassadors.html" target="_blank"><strong>Student Ambassador</strong></a>, Binghamton University</li>
-                    <li> <strong>Mentor</strong>, NYS Mentoring Program, Binghamton (Oct 2021 - Feb 2022) - Mentored young children at a local school.</li>
-                </ul>
+                <h3>Graduate Research Assistant & Project Manager</h3>
+                <h4>Watson Institute for Systems Excellence</h4>
             </div>
         </div>
     </div>
