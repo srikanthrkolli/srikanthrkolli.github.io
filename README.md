@@ -36,17 +36,13 @@
   </div>
 
   <!-- Right Section -->
-  <div style="flex: 1; text-align: right;">
+  <div style="flex: 1; text-align: justify;">
     <h2>🤝 Connect with Me</h2>
     <ul>
       <li>
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="16">
         <a href="https://www.linkedin.com/in/srikanth-r-kolli/">LinkedIn</a>
       </li>
-    </ul>
-
-    <h2>📷 Travel & Photography</h2>
-    <ul>
       <li>
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16">
         <a href="https://www.instagram.com/srikanthr_kolli">Instagram (Personal)</a>
@@ -57,5 +53,4 @@
       </li>
     </ul>
   </div>
-
 </div>
