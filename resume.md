@@ -19,7 +19,6 @@
     <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="400" style="border-radius: 10px; max-width: 100%;">
   </div>
 </div>
-# Resume Highlights
 
 <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
 
