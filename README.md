@@ -21,4 +21,3 @@ You can access my travel and photography insights at
 - 📄 [Resume](resume.md)
 - 🔬 [Current Research Highlights](research.md)
 - 🎨 [Personal Interests](interests.md)
-"""
