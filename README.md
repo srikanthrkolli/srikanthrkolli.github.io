@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; justify-content: space-between;">
   
-  <div style="flex: 1;">
+  <div style="flex: 1; text-align: justify;">
     <h1>Welcome to My Website</h1>
     <p>
       Hello! I am <strong>Sai Srikanth R. Kolli</strong>, a graduate research associate at the Watson Institute for Systems Excellence (WISE) and a PhD candidate in Industrial and Systems Engineering at Binghamton University, State University of New York.
@@ -13,24 +13,49 @@
   </div>
 
   <div style="flex: 1; text-align: right;">
-    <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="200" style="border-radius: 10px;">
+    <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="400" style="border-radius: 10px;">
   </div>
 
 </div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 
+  <!-- Left Section -->
+  <div style="flex: 1; text-align: left;">
+    <h2>📚 Access My Research Papers</h2>
+    <ul>
+      <li>📖 <a href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli">ResearchGate</a></li>
+      <li>🌐 <a href="https://orcid.org/0009-0005-2196-9632">ORCID ID</a></li>
+    </ul>
 
-## You can access my papers at the following:
-- 📖 [ResearchGate](https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli)
-- 🌐 [ORCID ID](https://orcid.org/0009-0005-2196-9632)
+    <h2>💼 Explore My Work</h2>
+    <ul>
+      <li>📄 <a href="resume.md">Resume</a></li>
+      <li>🔬 <a href="research.md">Current Research Highlights</a></li>
+      <li>🎨 <a href="interests.md">Personal Interests</a></li>
+    </ul>
+  </div>
 
-Connect with me at
-- <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="16"> [LinkedIn](https://www.linkedin.com/in/srikanth-r-kolli/)
+  <!-- Right Section -->
+  <div style="flex: 1; text-align: right;">
+    <h2>🤝 Connect with Me</h2>
+    <ul>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="16">
+        <a href="https://www.linkedin.com/in/srikanth-r-kolli/">LinkedIn</a>
+      </li>
+    </ul>
 
-You can access my travel and photography insights at
-- <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16"> [Instagram](https://www.instagram.com/srikanthr_kolli)
-- <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16"> [Instagram](https://www.instagram.com/shotsbytac)
+    <h2>📷 Travel & Photography</h2>
+    <ul>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16">
+        <a href="https://www.instagram.com/srikanthr_kolli">Instagram (Personal)</a>
+      </li>
+      <li>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="16">
+        <a href="https://www.instagram.com/shotsbytac">Instagram (Photography)</a>
+      </li>
+    </ul>
+  </div>
 
-## Explore My Work:
-- 📄 [Resume](resume.md)
-- 🔬 [Current Research Highlights](research.md)
-- 🎨 [Personal Interests](interests.md)
+</div>
