@@ -21,13 +21,13 @@
 
   <!-- Left Section -->
   <div style="flex: 1; text-align: left;">
-    <h2>📚 Access My Research Papers</h2>
+    <h2> Access My Research Papers</h2>
     <ul>
       <li>📖 <a href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli">ResearchGate</a></li>
       <li>🌐 <a href="https://orcid.org/0009-0005-2196-9632">ORCID ID</a></li>
     </ul>
 
-    <h2>💼 Explore My Work</h2>
+    <h2> Explore My Work</h2>
     <ul>
       <li>📄 <a href="resume.md">Resume</a></li>
       <li>🔬 <a href="research.md">Current Research Highlights</a></li>
@@ -37,7 +37,7 @@
 
   <!-- Right Section -->
   <div style="flex: 1; text-align: justify;">
-    <h2>🤝 Connect with Me</h2>
+    <h2> Connect with Me</h2>
     <ul>
       <li>
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="16">
