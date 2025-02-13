@@ -1,10 +1,23 @@
-# Welcome to My Website
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  
+  <div style="flex: 1;">
+    <h1>Welcome to My Website</h1>
+    <p>
+      Hello! I am <strong>Sai Srikanth R. Kolli</strong>, a graduate research associate at the Watson Institute for Systems Excellence (WISE) and a PhD candidate in Industrial and Systems Engineering at Binghamton University, State University of New York.
+      I hold a Master’s degree from Binghamton University and a Bachelor’s degree from Mahindra University (École Centrale School of Engineering).
+    </p>
+    <p>
+      My research focuses on manufacturing operations, data analytics, machine learning, and artificial intelligence. I apply these domains to enhance supply chain management, logistics, quality improvement, process optimization, and automation.
+      I am also honored to be a member of the Alpha Pi Mu Industrial Engineering Honor Society and serve as a technical advisory committee (TAC) member for the Surface Mount Technology Association (SMTA) International.
+    </p>
+  </div>
 
-<img src="images/linkedin.png" alt="My Image" width="200">
+  <div style="flex: 1; text-align: right;">
+    <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="200" style="border-radius: 10px;">
+  </div>
 
-Hello! I am **Sai Srikanth R. Kolli**, a graduate research associate at the Watson Institute for Systems Excellence (WISE) and a PhD candidate in Industrial and Systems Engineering at Binghamton University, State University of New York. I hold a Master's degree from Binghamton University and a Bachelor's degree from Mahindra University (École Centrale School of Engineering). 
+</div>
 
-My research focuses on manufacturing operations, data analytics, machine learning, and artificial intelligence. I apply these domains to enhance supply chain management, logistics, quality improvement, process optimization, and automation. I am also honored to be a member of the Alpha Pi Mu Industrial Engineering Honor Society and serve as a technical advisory committee (TAC) member for the Surface Mount Technology Association (SMTA) International.
 
 ## You can access my papers at the following:
 - 📖 [ResearchGate](https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli)
