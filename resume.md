@@ -1,9 +1,17 @@
 # Resume highlights
 
-### Connect/access my research at the following
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  
+  <div style="flex: 1; text-align: justify;">
+  Connect/access my research at the following
 - <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="16"> [LinkedIn](https://www.linkedin.com/in/srikanth-r-kolli/)
 - 📖 [ResearchGate](https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli)
 - 🌐 [ORCID ID](https://orcid.org/0009-0005-2196-9632)
+  </div>
+
+  <div style="flex: 1; text-align: right;">
+    <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="400" style="border-radius: 10px;">
+  </div>
 
 ### Education
 **School of Systems Science and Industrial Engineering (SSIE), Binghamton University (SUNY), New York, USA**
