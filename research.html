@@ -3,83 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Highlights - Sai Srikanth R. Kolli</title>
+    <title>Sai Srikanth R. Kolli</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
         }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1d1d1f;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0071e3;
+        }
+
         .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
+            max-width: 960px;
+            margin: 20px auto;
             padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            justify-content: space-between;
+            gap: 40px; /* Increased gap for better spacing */
+        }
+
+        .left {
+            flex: 1;
+        }
+
+        .right {
+            text-align: center;
+        }
+
+        .right img {
+            max-width: 250px; /* Adjust image size */
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: justify; /* Justify text */
+        }
+
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
+
         li {
-            margin: 5px 0;
+            margin-bottom: 5px;
         }
-        .section {
-            margin-bottom: 20px;
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .section-header {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+                .section {
+            flex: 1; /* Each section takes equal width */
+            padding: 20px; /* Add some padding around the sections */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .section h2, .section h1 {
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: disc; /* Use bullet points */
+            padding-left: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column; /* Stack sections vertically */
+            }
+
+            .section {
+                flex: 1; /* Each section takes full width */
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                align-items: center; /* Center items on smaller screens */
+            }
+
+            .right img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
+    <nav>
+        </nav>
 
-    <div class="container">        
-        <div class="section">
-            <h2> Research Interests</h2>
-            <ul>
-                <li> Artificial Intelligence - Machine Learning, Deep Learning, Large Language Models</li>
-                <li> Operations Research, Supply Chain and Logistics Management</li>
-                <li> Data and Business-driven Analysis for Manufacturing Companies</li>
-            </ul>
+    <div class="container">
+        <div class="flex-container">
+            <div class="left">
+                <h1>Welcome to My Website</h1>
+                <p>
+                    Hello! I am <strong>Sai Srikanth R. Kolli</strong>, a graduate research associate at the Watson Institute for Systems Excellence (WISE) and a PhD candidate in Industrial and Systems Engineering at Binghamton University, State University of New York.
+                    I hold a Master’s degree from Binghamton University and a Bachelor’s degree from Mahindra University (École Centrale School of Engineering).
+                </p>
+                <p>
+                    My research focuses on manufacturing operations, data analytics, machine learning, and artificial intelligence. I apply these domains to enhance supply chain management, logistics, quality improvement, process optimization, and automation.
+                    I am also honored to be a member of the Alpha Pi Mu Industrial Engineering Honor Society and serve as a technical advisory committee (TAC) member for the Surface Mount Technology Association (SMTA) International.
+                </p>
+            </div>
+            <div class="right">
+                <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli">
+            </div>
         </div>
 
-        <div class="section">
-            <h1> Published Content</h2>
-            <ul>
-                <li> Artificial Intelligence - Machine Learning, Deep Learning, Large Language Models</li>
-                <li> Operations Research, Supply Chain and Logistics Management</li>
-                <li> Data and Business-driven Analysis for Manufacturing Companies</li>
-            </ul>
+        <div class="section-header"></div>
+
+        <div class="flex-container">
+            <div class="section">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li>Artificial Intelligence - Machine Learning, Deep Learning, Large Language Models</li>
+                    <li>Operations Research, Supply Chain and Logistics Management</li>
+                    <li>Data and Business-driven Analysis for Manufacturing Companies</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Published Content</h2>
+                <ul>
+                    <li>Artificial Intelligence - Machine Learning, Deep Learning, Large Language Models</li>
+                    <li>Operations Research, Supply Chain and Logistics Management</li>
+                    <li>Data and Business-driven Analysis for Manufacturing Companies</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="section">
-            <h1>Ongoing Research Highlights</h1>
-            
-            <h2> On-Time Delivery Delay Prediction</h2>
-            <ul>
-                <li>Implementing <strong>LSTM, BiLSTM, and GRU</strong> for prediction.</li>
-                <li>Feature selection using <strong>Autoencoders and Variance Threshold</strong>.</li>
-            </ul>
-        </div>
+        <div class="section-header"></div>
 
-        <div class="section">
-            <h2> Logistics Forwarder Selection Using Supervised Machine Learning</h2>
-            <ul>
-                <li>Implementing <strong>RF, Adaboost, and XGBoost with k-fold cross-validation</strong> for supplier selection.</li>
-            </ul>
-        </div>
+        <div class="flex-container">
+            <div class="section">
+                <h1>Ongoing Research Highlights</h1>
 
-        <div class="section">
-            <h2> AI in Transportation Logistics - A Systematic Review</h2>
-            <ul>
-                <li>Exploring applications of <strong>AI in transportation logistics</strong> (academic and industrial applications).</li>
-            </ul>
+                <h2>On-Time Delivery Delay Prediction</h2>
+                <ul>
+                    <li>Implementing <strong>LSTM, BiLSTM, and GRU</strong> for prediction.</li>
+                    <li>Feature selection using <strong>Autoencoders and Variance Threshold</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Logistics Forwarder Selection Using Supervised Machine Learning</h2>
+                <ul>
+                    <li>Implementing <strong>RF, Adaboost, and XGBoost with k-fold cross-validation</strong> for supplier selection.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>AI in Transportation Logistics - A Systematic Review</h2>
+                <ul>
+                    <li>Exploring applications of <strong>AI in transportation logistics</strong> (academic and industrial applications).</li>
+                </ul>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
