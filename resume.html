@@ -91,6 +91,38 @@
         .presentation-title {
         }
 
+        .back-button {
+            display: inline-block; /* Make it a block element so it takes up full width if needed*/
+            padding: 10px 20px;
+            background-color: #0071e3; /* Example: Blue color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Add some space below the button */
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .header-container { /* Container for header and button */
+            display: flex;
+            justify-content: space-between; /* Button on left, header on right */
+            align-items: center; /* Vertically align */
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column; /* Stack button and header vertically */
+                align-items: flex-start; /* Align items to the left */
+            }
+
+            .back-button {
+                margin-bottom: 10px; /* Adjust margin for smaller screens */
+            }
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .profile-header {
@@ -111,6 +143,13 @@
     </style>
 </head>
 <body>
+    <div class="container">
+    <div class="header-container">  <a href="index.html" class="back-button">Back to Main Page</a>
+        <div class="profile-header">
+            </div>
+    </div>
+
+    </div>
     <div class="container">
         <!-- Profile Header -->
         <section class="profile-header">
