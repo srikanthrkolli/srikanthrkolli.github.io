@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Sai Srikanth R. Kolli">
     <title>Resume - Sai Srikanth R. Kolli</title>
     <style>
         body {
@@ -12,66 +13,89 @@
             padding: 0;
             background-color: #f5f5f7;
             color: #1d1d1f;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
         }
+
         .container {
-            width: 100vw;
-            height: 100vh;
-            padding: 60px;
-            border-radius: 0;
-            box-shadow: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            max-width: 960px; /* Adjust as needed */
+            margin: 40px auto; /* Center horizontally */
+            padding: 20px; /* Add some padding */
         }
+
         h1, h2, h3 {
             color: #000;
             font-weight: 600;
         }
+
         h1 {
             font-size: 2.2em;
+            text-align: center; /* Center the name */
         }
+
+        p {
+            font-size: 1.1em;
+            color: #333;
+            text-align: center; /* Center the title */
+            margin-bottom: 20px; /* Add some space below the title */
+        }
+
+        .profile-image {
+            max-width: 180px;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto 20px auto; /* Center the image */
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
         h2 {
             font-size: 1.8em;
             margin-top: 30px;
         }
+
         h3 {
             font-size: 1.4em;
             margin-top: 20px;
         }
-        p {
-            font-size: 1.1em;
-            color: #333;
-        }
-        a {
-            color: #0071e3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 40px;
-            max-width: 900px;
-            width: 100%;
-        }
-        .profile-image {
-            width: 180px;
-            border-radius: 12px;
-            display: block;
-            margin: 0 auto 20px auto;
-        }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
             margin: 5px 0;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -80,17 +104,17 @@
         <h1>Sai Srikanth R. Kolli</h1>
         <p>Graduate Research Associate | PhD Student in Industrial & Systems Engineering</p>
         <img class="profile-image" src="images/linkedin.png" alt="Sai Srikanth R. Kolli">
-        
-        <div class="section">
+
+        <article class="section">
             <h2>Connect & Access My Research</h2>
             <ul>
                 <li><a href="https://www.linkedin.com/in/srikanth-r-kolli/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli" target="_blank">ResearchGate</a></li>
                 <li><a href="https://orcid.org/0009-0005-2196-9632" target="_blank">ORCID ID</a></li>
             </ul>
-        </div>
+        </article>
 
-        <div class="section">
+        <article class="section">
             <h2>Education & Certifications</h2>
             <h3>Binghamton University (SUNY), NY, USA</h3>
             <ul>
@@ -106,9 +130,9 @@
                 <li><a href="https://www.credly.com/badges/6532569c-adce-42e9-8ae3-ad8d014df99c?source=linked_in_profile" target="_blank">Project Management Essentials (Jan 2022)</a></li>
                 <li><a href="https://www.credly.com/badges/37f8ac2c-b8c4-4496-9c16-7a049eebc9b0/public_url" target="_blank">Microsoft Certified: Azure AI Fundamentals (Oct 2024)</a></li>
             </ul>
-        </div>
+        </article>
 
-        <div class="section">
+        <article class="section">
             <h2>Professional Experience</h2>
             <h3>Graduate Research Assistant & Project Manager</h3>
             <p>Watson Institute for Systems Excellence (WISE), Binghamton University</p>
@@ -119,9 +143,9 @@
                 <li>Optimized logistics operations and automated shipment creation.</li>
                 <li>Designed an interactive UI for quotation generation, improving lead time.</li>
             </ul>
-        </div>
+        </article>
 
-        <div class="section">
+        <article class="section">
             <h2>Conference Presentations</h2>
             <ul>
                 <li>SMTA International, Chicago (Oct 2024) - Predicting Delivery Reliability of Logistics Forwarders: A Machine Learning Approach for Forwarder Selection and Evaluation Process</li>
@@ -129,9 +153,9 @@
                 <li>SISE Virtual Conference (Oct 2023) - Predicting On-time Delivery of Material in Electronics Manufacturing Industries</li>
                 <li>SISE Virtual Conference (Oct 2022) - Automation of Quotation Generation in Manufacturing Industries</li>
             </ul>
-        </div>
+        </article>
 
-        <div class="section">
+        <article class="section">
             <h2>Leadership</h2>
             <ul>
                 <li>Member, Alpha Pi Mu Industrial Engineering Honor Society</li>
@@ -139,7 +163,7 @@
                 <li>Student Ambassador, Binghamton University</li>
                 <li>Mentor, NYS Mentoring Program</li>
             </ul>
-        </div>
+        </article>
     </div>
 </body>
 </html>
