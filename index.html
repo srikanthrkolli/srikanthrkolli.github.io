@@ -80,8 +80,9 @@
 
         .flex-container {
             display: flex;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            gap: 20px; /* Space between flex items */
+            align-items: center; /* Ensures both content and image align at the same height */
+            justify-content: space-between; /* Creates space between the two divs */
+            gap: 20px; /* Adds spacing between text and image */
         }
 
         .left {
@@ -94,9 +95,10 @@
         }
 
         .right img {
-            max-width: 350px; /* Or 100% if you want it responsive */
+            max-width: 200px; /* Or 100% if you want it responsive */
             height: auto;
             border-radius: 10px;
+            object-fit: cover;
         }
 
         h1 {
@@ -170,7 +172,6 @@
         </ul>
     </nav>
     
-    <div class="container">
         <div class="flex-container">
             <div class="left">
                 <h1>Welcome to My Website</h1>
