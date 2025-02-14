@@ -22,12 +22,12 @@
             padding: 10px 20px;
             border-bottom: 1px solid #eee;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /*space-between*/
             align-items: center;
         }
 
         .nav-left {
-            display: flex; /* Make left elements use flexbox */
+            display: None; /* Make left elements use flexbox */
             align-items: center; /* Vertically center */
         }
         
@@ -38,9 +38,9 @@
         }
         
         .site-title {
-            font-weight: 500; /* Or whatever style you want */
-            margin: 0 auto; /* Centers the title */
-            text-align: center;
+            font-weight: 200; /* Or whatever style you want */
+            margin: 20px; /* Centers the title */
+            /*text-align: center;*/
         }
 
         nav ul {
@@ -57,7 +57,7 @@
         nav a {
             text-decoration: none;
             color: #1d1d1f;
-            font-weight: 500;
+            font-weight: 200;
             padding: 8px 12px; /* Add some padding around the link text */
             border-radius: 4px; /* Slightly rounded corners (optional) */
             transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
@@ -198,10 +198,10 @@
     <div class="nav-left">  <a href="index.html" class="logo">  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" class="home-icon">  </a>
         <span class="site-title">Sai Srikanth R. Kolli</span>  </div>
     <ul>
-        <li><a href="resume.html" class="active">About Me</a></li>
-        <li><a href="research.html" class="active">Papers</a></li>
-        <li><a href="interests.html" class="active">Personal Interests</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="resume.html">About Me</a></li>
+        <li><a href="research.html">Papers</a></li>
+        <li><a href="interests.html">Personal Interests</a></li>
+        <li><a href="blog.html">Blog</a></li>
     </ul>
     </nav>
 
