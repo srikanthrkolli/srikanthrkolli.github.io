@@ -21,36 +21,33 @@
             padding: 20px;
         }
 
-        h1, h2, h3 {
-            color: #000;
-            font-weight: 600;
-        }
-
-        h1 {
-            font-size: 2.2em;
-        }
-
-        p {
-            font-size: 1.1em;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
         .profile-header {
             display: flex;
-            align-items: flex-start;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 20px;
             margin-bottom: 40px;
-            flex-direction: row-reverse; /* Image on the right */
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            font-size: 1.1em;
+            color: #333;
+            margin: 5px 0;
         }
 
         .profile-image-container {
             width: 200px;
-            margin-left: 20px; /* Space between image and text */
-            align-self: center; /* Vertically center the image */
-        }
-
-        .profile-info {
-            flex: 1; /* Text takes up remaining space */
+            margin-left: 20px;
         }
 
         .profile-image {
@@ -58,10 +55,6 @@
             height: auto;
             border-radius: 12px;
             display: block;
-        }
-
-        .section {
-            margin-bottom: 40px;
         }
 
         h2 {
@@ -75,8 +68,8 @@
         }
 
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            padding-left: 20px;
         }
 
         li {
@@ -92,48 +85,35 @@
             text-decoration: underline;
         }
 
-        /* Responsive adjustments */
+        /* Responsive Adjustments */
         @media (max-width: 768px) {
             .profile-header {
-                flex-direction: column-reverse; /* Stack vertically on small screens */
+                flex-direction: column-reverse;
                 align-items: center;
+                text-align: center;
             }
 
             .profile-image-container {
-                margin-left: 0;
-                margin-top: 20px;
-                width: 150px;
+                margin: 20px 0 0;
             }
 
             .container {
                 width: 95%;
                 padding: 10px;
             }
-            h1 {
-                font-size: 1.8em;
-            }
-            h2 {
-                font-size: 1.4em;
-            }
-            h3 {
-                font-size: 1.2em;
-            }
-            p {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-
-        <article class="section profile-header">
+        <!-- Profile Header -->
+        <section class="profile-header">
             <div class="profile-info">
                 <h1>Sai Srikanth R. Kolli</h1>
                 <p>Graduate Research Associate | PhD Student in Industrial & Systems Engineering</p>
-                <p>Email: srikanthrkolli@gmail.com | skolli3@binghamton.edu</p>
+                <p>Email: <a href="mailto:srikanthrkolli@gmail.com">srikanthrkolli@gmail.com</a> | <a href="mailto:skolli3@binghamton.edu">skolli3@binghamton.edu</a></p>
                 <h2>Connect & Access My Research</h2>
-                <ul> style="list-style-type: disc;">
+                <ul>
                     <li><a href="https://www.linkedin.com/in/srikanth-r-kolli/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli" target="_blank">ResearchGate</a></li>
                     <li><a href="https://orcid.org/0009-0005-2196-9632" target="_blank">ORCID ID</a></li>
@@ -142,59 +122,65 @@
             <div class="profile-image-container">
                 <img class="profile-image" src="images/linkedin.png" alt="Sai Srikanth R. Kolli">
             </div>
-        </article>
-        <article class="section">
+        </section>
+
+        <!-- Education & Certifications -->
+        <section>
             <h2>Education & Certifications</h2>
             <h3>Binghamton University (SUNY), NY, USA</h3>
             <p>School of System Science and Industrial Engineering, Thomas J. Watson College of Engineering and Applied Sciences</p>
-            <ul> style="list-style-type: disc;">
+            <ul>
                 <li>PhD in Industrial and Systems Engineering (Ongoing)</li>
                 <li>Masters in Industrial and Systems Engineering (May 2023)</li>
             </ul>
+
             <h3>Mahindra University, Hyderabad, India</h3>
             <p>École Centrale School of Engineering</p>
-            <ul> style="list-style-type: disc;">
+            <ul>
                 <li>Bachelor's in Mechanical Engineering (May 2019)</li>
             </ul>
+
             <h3>Certifications</h3>
-            <ul> style="list-style-type: disc;">
+            <ul>
                 <li><a href="https://www.credly.com/badges/6532569c-adce-42e9-8ae3-ad8d014df99c?source=linked_in_profile" target="_blank">Project Management Essentials (Jan 2022)</a></li>
                 <li><a href="https://www.credly.com/badges/37f8ac2c-b8c4-4496-9c16-7a049eebc9b0/public_url" target="_blank">Microsoft Certified: Azure AI Fundamentals (Oct 2024)</a></li>
             </ul>
-        </article>
+        </section>
 
-        <article class="section">
+        <!-- Professional Experience -->
+        <section>
             <h2>Professional Experience</h2>
             <h3>Graduate Research Assistant & Project Manager (April 2022 - Present)</h3>
             <p>Watson Institute for Systems Excellence (WISE), School of SSIE, Binghamton University (SUNY), New York, USA</p>
             <p>Department of Business Development & Supply Chain Operations | Foxconn Industrial Internet (FII), Wisconsin, USA</p>
-            <ul> style="list-style-type: disc;">
+            <ul>
                 <li>Resolved supply chain challenges and developed analytics-based solutions.</li>
                 <li>Optimized logistics operations and automated shipment creation.</li>
                 <li>Designed an interactive UI for quotation generation, improving lead time.</li>
             </ul>
-        </article>
+        </section>
 
-        <article class="section">
+        <!-- Conference Presentations -->
+        <section>
             <h2>Conference Presentations</h2>
-            <ul> style="list-style-type: disc;">
-                <li>SMTA International, Chicago (Oct 2024) - Predicting Delivery Reliability of Logistics Forwarders: A Machine Learning Approach for Forwarder Selection and Evaluation Process</li>
+            <ul>
+                <li>SMTA International, Chicago (Oct 2024) - Predicting Delivery Reliability of Logistics Forwarders</li>
                 <li>IISE Conference, Montreal (May 2024) - Designing a Resilience Logistics Network Using Metaheuristics</li>
                 <li>SISE Virtual Conference (Oct 2023) - Predicting On-time Delivery of Material in Electronics Manufacturing Industries</li>
                 <li>SISE Virtual Conference (Oct 2022) - Automation of Quotation Generation in Manufacturing Industries</li>
             </ul>
-        </article>
+        </section>
 
-        <article class="section">
+        <!-- Leadership -->
+        <section>
             <h2>Leadership</h2>
-            <ul> style="list-style-type: disc;">
+            <ul>
                 <li>Member, Alpha Pi Mu Industrial Engineering Honor Society</li>
                 <li>Technical Advisory Committee Member, SMTA International</li>
                 <li>Student Ambassador, Binghamton University</li>
                 <li>Mentor, NYS Mentoring Program</li>
             </ul>
-        </article>
-
+        </section>
     </div>
 </body>
 </html>
