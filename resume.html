@@ -167,6 +167,25 @@
             padding-top: 20px;
             margin-top: 20px;
         }
+        .styled-list {
+            list-style-type: none; /* Removes default bullets */
+            padding-left: 0;
+        }
+        
+        .styled-list li {
+            font-style: italic; 
+            padding-left: 20px; /* Adds space for custom bullet */
+            position: relative;
+        }
+        
+        .styled-list li::before {
+            content: "•"; /* Custom bullet */
+            font-size: 1.2em;
+            color: #0071e3; /* Professional blue color */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
         /* Responsive design */
         @media (max-width: 768px) {
             .flex-container {
@@ -222,7 +241,28 @@
                 </div>
             </div>
         </div>
-        <div class="section-header"></div>
+        <div class="section-header"></div>  <section class="section">  <h2>Education & Certifications</h2>
+            <h3>Binghamton University (SUNY), Binghamton, New York, USA</h3>
+            <p>School of System Science and Industrial Engineering (SSIE), Thomas J. Watson College of Engineering and Applied Sciences</p>
+            <ul class="styled-list">
+                <li><em>Ph.D. in Industrial and Systems Engineering (Ongoing)</em></li>
+                <li><em>Master’s in Industrial and Systems Engineering (May 2023)</em></li>
+            </ul>
+
+            <h3>Mahindra University, Hyderabad, Telangana, India</h3>
+            <p>École Centrale School of Engineering</p>
+            <ul class="styled-list">
+                <li><em>Bachelor's in Mechanical Engineering (May 2019)</em></li>
+            </ul>
+            
+            <h3>Certifications</h3>
+            <ul>
+                <li><a href="https://www.credly.com/badges/6532569c-adce-42e9-8ae3-ad8d014df99c?source=linked_in_profile" target="_blank">Project Management Essentials (Jan 2022)</a></li>
+                <li><a href="https://www.credly.com/badges/37f8ac2c-b8c4-4496-9c16-7a049eebc9b0/public_url" target="_blank">Microsoft Certified: Azure AI Fundamentals (Oct 2024)</a></li>
+            </ul>
+        </section>
+        <div class="section-header"></div>  <section class="section">  <h2>Professional Experience</h2>
+        </section>
     </div>
     
 </body>
