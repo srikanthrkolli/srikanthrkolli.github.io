@@ -24,7 +24,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-right: 20px;
         }
 
         .nav-left {
@@ -59,11 +58,23 @@
             text-decoration: none;
             color: #1d1d1f;
             font-weight: 500;
-            transition: color 0.3s ease;
+            padding: 8px 12px; /* Add some padding around the link text */
+            border-radius: 4px; /* Slightly rounded corners (optional) */
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
         }
 
         nav a:hover {
             color: #0071e3;
+            background-color: #f0f0f0; /* Light gray background on hover (optional) */
+        }
+        nav a.active { /* Style for the active/current page link (optional) */
+            color: #0071e3;
+            font-weight: 600; /* Slightly bolder */
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
         }
 
         .container {
@@ -187,10 +198,10 @@
     <div class="nav-left">  <a href="index.html" class="logo">  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" class="home-icon">  </a>
         <span class="site-title">Sai Srikanth R. Kolli</span>  </div>
     <ul>
-        <li><a href="resume.html">About Me</a></li>
-        <li><a href="research.html">Papers</a></li>
-        <li><a href="interests.html">Personal Interests</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resume.html" class="active">About Me</a></li>
+        <li><a href="research.html" class="active">Papers</a></li>
+        <li><a href="interests.html" class="active">Personal Interests</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
     </ul>
     </nav>
 
