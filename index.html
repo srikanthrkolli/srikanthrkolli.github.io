@@ -8,14 +8,14 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
-            background-color: #f5f5f7; /* Light background */
-            color: #1d1d1f; /* Dark text color */
+            background-color: #f5f5f7;
+            color: #1d1d1f;
         }
 
         nav {
-            background-color: #fff; /* White navigation bar */
+            background-color: #fff;
             padding: 10px 20px;
-            border-bottom: 1px solid #eee; /* Subtle border */
+            border-bottom: 1px solid #eee;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -25,83 +25,53 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex; /* Horizontal menu */
+            display: flex;
         }
 
         nav li {
-            margin-left: 20px; /* Spacing between menu items */
+            margin-left: 20px;
         }
 
         nav a {
             text-decoration: none;
-            color: #1d1d1f; /* Dark link color */
+            color: #1d1d1f;
             font-weight: 500;
-            transition: color 0.3s ease; /* Smooth color transition */
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #0071e3; /* Blue on hover */
+            color: #0071e3;
         }
 
         .container {
             max-width: 960px;
-            margin: 20px auto; /* Centered container */
-            padding: 20px;
-        }
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column; /* Stack navigation vertically */
-                align-items: flex-start;
-            }
-
-            nav ul {
-                flex-direction: column; /* Stack menu items vertically */
-                margin-top: 10px;
-            }
-
-            nav li {
-                margin: 10px 0; /* Adjust spacing for vertical menu */
-                margin-left: 0;
-            }
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: #f5f5f7;
-            color: #1d1d1f;
-        }
-
-        .container {
-            max-width: 960px; /* Adjust as needed */
             margin: 20px auto;
             padding: 20px;
         }
 
         .flex-container {
             display: flex;
-            align-items: center; /* Ensures both content and image align at the same height */
-            justify-content: space-between; /* Creates space between the two divs */
-            gap: 20px; /* Adds spacing between text and image */
+            align-items: flex-start; /* Align items to the top */
+            justify-content: space-between;
+            gap: 40px; /* Increased gap for better spacing */
         }
 
         .left {
-            flex: 1; /* Takes up available space */
+            flex: 1;
         }
 
         .right {
-            /* No flex-grow, so it takes its natural width */
-            text-align: center; /* Center the image */
+            text-align: center;
         }
 
         .right img {
-            max-width: 200px; /* Or 100% if you want it responsive */
+            max-width: 250px; /* Adjust image size */
             height: auto;
             border-radius: 10px;
         }
 
         h1 {
-            font-size: 2.5em; /* Larger heading */
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
 
@@ -113,6 +83,7 @@
         p {
             line-height: 1.6;
             margin-bottom: 10px;
+            text-align: justify; /* Justify text */
         }
 
         ul {
@@ -137,32 +108,33 @@
         .icon {
             width: 20px;
             height: 20px;
-            vertical-align: left;
+            vertical-align: middle;
             margin-right: 5px;
         }
 
         .section-header {
-            border-top: 1px solid rgba(0, 0, 0, 0.2); /* Light gray line */
-            padding-top: 20px; /* Add some space above the line */
-            margin-top: 20px; /* Add some space below the line */
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding-top: 20px;
+            margin-top: 20px;
         }
 
         /* Responsive design */
         @media (max-width: 768px) {
             .flex-container {
-                flex-direction: column; /* Stack items vertically */
+                flex-direction: column;
+                align-items: center; /* Center items on smaller screens */
             }
 
             .right img {
-                max-width: 100%; /* Image takes full width on small screens */
+                max-width: 100%;
             }
         }
-        
     </style>
 </head>
 <body>
     <nav>
-        <a href="#" class="logo">Sai Srikanth R. Kolli</a>  <ul>
+        <a href="#" class="logo">Sai Srikanth R. Kolli</a>
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">About Me</a></li>
             <li><a href="research.html">Papers</a></li>
@@ -170,7 +142,8 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    
+
+    <div class="container">
         <div class="flex-container">
             <div class="left">
                 <h1>Welcome to My Website</h1>
@@ -188,7 +161,9 @@
             </div>
         </div>
 
-        <div class="section-header"></div>  <div class="flex-container">
+        <div class="section-header"></div>
+
+        <div class="flex-container">
             <div class="left">
                 <h2>Access My Research Papers</h2>
                 <ul>
@@ -222,7 +197,7 @@
                     </li>
                     <li>
                         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail Icon">
-                        <a href="mailto:srikanthrkolli@gmail.com">srikanthrkolli@gmail.com</a> | 
+                        <a href="mailto:srikanthrkolli@gmail.com">srikanthrkolli@gmail.com</a> |
                         <a href="mailto:skolli3@binghamton.edu">skolli3@binghamton.edu</a>
                     </li>
                 </ul>
