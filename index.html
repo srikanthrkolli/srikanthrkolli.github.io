@@ -6,62 +6,93 @@
     <title>Sai Srikanth R. Kolli</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
         }
+
         .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
+            max-width: 960px; /* Adjust as needed */
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
-        }
+
         .flex-container {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 20px; /* Space between flex items */
         }
-        .left, .right {
-            flex: 1;
-            padding: 10px;
-        }
+
         .left {
-            text-align: justify;
+            flex: 1; /* Takes up available space */
         }
+
         .right {
-            text-align: right;
+            /* No flex-grow, so it takes its natural width */
+            text-align: center; /* Center the image */
         }
+
+        .right img {
+            max-width: 400px; /* Or 100% if you want it responsive */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Larger heading */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
+
         li {
-            margin: 5px 0;
+            margin-bottom: 5px;
         }
+
         a {
-            color: #0073b1;
+            color: #0071e3;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .icon {
-            width: 16px;
+            width: 20px;
+            height: 20px;
             vertical-align: middle;
             margin-right: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column; /* Stack items vertically */
+            }
+
+            .right img {
+                max-width: 100%; /* Image takes full width on small screens */
+            }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
         <div class="flex-container">
             <div class="left">
@@ -76,7 +107,7 @@
                 </p>
             </div>
             <div class="right">
-                <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli" width="400" style="border-radius: 10px;">
+                <img src="images/linkedin.png" alt="Sai Srikanth R. Kolli">
             </div>
         </div>
 
@@ -90,9 +121,10 @@
 
                 <h2>Explore My Work</h2>
                 <ul>
-                    <li> <a href="resume.html">About Me</a></li>
-                    <li> <a href="research.html">Current Research Highlights</a></li>
-                    <li> <a href="interests.html">Personal Interests</a></li>
+                    <li><a href="resume.html">About Me</a></li>
+                    <li><a href="research.html">Current Research Highlights</a></li>
+                    <li><a href="interests.html">Personal Interests</a></li>
+                    <li><a href="research.html">Blog</a></li>
                 </ul>
             </div>
 
@@ -100,21 +132,20 @@
                 <h2>Connect with Me</h2>
                 <ul>
                     <li>
-                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"> 
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
                         <a href="https://www.linkedin.com/in/srikanth-r-kolli/">LinkedIn</a>
                     </li>
                     <li>
-                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"> 
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">
                         <a href="https://www.instagram.com/srikanthr_kolli">Instagram (Personal)</a>
                     </li>
                     <li>
-                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"> 
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">
                         <a href="https://www.instagram.com/shotsbytac">Instagram (Photography)</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
 </body>
 </html>
