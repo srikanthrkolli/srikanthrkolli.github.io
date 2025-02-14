@@ -27,6 +27,21 @@
             padding-right: 20px;
         }
 
+        .nav-left {
+            display: flex; /* Make left elements use flexbox */
+            align-items: center; /* Vertically center */
+        }
+        
+        .home-icon {
+            width: 24px;   /* Adjust size as needed */
+            height: 24px;  /* Adjust size as needed */
+            margin-right: 10px; /* Space between icon and title */
+        }
+        
+        .site-title {
+            font-weight: 500; /* Or whatever style you want */
+        }
+
         nav ul {
             list-style: none;
             margin: 0;
@@ -166,15 +181,25 @@
     </style>
 </head>
 <body>
+    <!nav>
+        <!a href="#" class="logo">Sai Srikanth R. Kolli<!/a>
+        <!ul>
+            <!li><!a href="index.html">Home<!/a><!/li>
+            <!li><!a href="resume.html">About Me<!/a><!/li>
+            <!li><!a href="research.html">Papers<!/a><!/li>
+            <!li><!a href="interests.html">Personal Interests<!/a><!/li>
+            <!li><!a href="blog.html">Blog<!/a></li>
+        <!/ul>
+    <!/nav>
     <nav>
-        <a href="#" class="logo">Sai Srikanth R. Kolli</a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">About Me</a></li>
-            <li><a href="research.html">Papers</a></li>
-            <li><a href="interests.html">Personal Interests</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
+    <div class="nav-left">  <a href="index.html" class="logo">  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" class="home-icon">  </a>
+        <span class="site-title">Sai Srikanth R. Kolli</span>  </div>
+    <ul>
+        <li><a href="resume.html">About Me</a></li>
+        <li><a href="research.html">Papers</a></li>
+        <li><a href="interests.html">Personal Interests</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
     </nav>
 
     <div class="container">
