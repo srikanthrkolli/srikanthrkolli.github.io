@@ -22,24 +22,16 @@
             padding: 10px 20px;
             border-bottom: 1px solid #eee;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /*space-between*/
             align-items: center;
-            padding-right: 20px;
-        }
-        .nav-left {
-            display: flex; /* Make left elements use flexbox */
-            align-items: center; /* Vertically center */
         }
         
         .home-icon {
-            width: 24px;   /* Adjust size as needed */
-            height: 24px;  /* Adjust size as needed */
-            margin-right: 10px; /* Space between icon and title */
+            width: 14px;   /* Adjust size as needed */
+            height: 14px;  /* Adjust size as needed */
+           /* margin-right: 10px; Space between icon and title */
         }
-        
-        .site-title {
-            font-weight: 500; /* Or whatever style you want */
-        }
+
         nav ul {
             list-style: none;
             margin: 0;
@@ -54,12 +46,24 @@
         nav a {
             text-decoration: none;
             color: #1d1d1f;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            font-weight: 200;
+            padding: 8px 12px; /* Add some padding around the link text */
+            border-radius: 4px; /* Slightly rounded corners (optional) */
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
         }
 
         nav a:hover {
             color: #0071e3;
+            background-color: #f0f0f0; /* Light gray background on hover (optional) */
+        }
+        nav a.active { /* Style for the active/current page link (optional) */
+            color: #0071e3;
+            font-weight: 600; /* Slightly bolder */
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
         }
 
         .container {
