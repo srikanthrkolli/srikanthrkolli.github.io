@@ -11,7 +11,6 @@
             background-color: #f5f5f7;
             color: #1d1d1f;
         }
-
         nav {
             background-color: #fff;
             padding: 10px 20px;
@@ -43,17 +42,19 @@
             color: #0071e3;
         }
 
+
         .container {
-            max-width: 960px;
+            max-width: 980px; /* Adjusted max-width */
             margin: 20px auto;
             padding: 20px;
         }
 
         .flex-container {
             display: flex;
-            align-items: flex-start; /* Align items to the top */
+            align-items: flex-start;
             justify-content: space-between;
-            gap: 40px; /* Increased gap for better spacing */
+            gap: 60px; /* Increased gap */
+            flex-wrap: wrap; /* Allow wrapping */
         }
 
         .left {
@@ -65,11 +66,10 @@
         }
 
         .right img {
-            max-width: 250px; /* Adjust image size */
+            max-width: 300px; /* Adjusted image size */
             height: auto;
             border-radius: 10px;
         }
-
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -82,17 +82,13 @@
 
         p {
             line-height: 1.6;
-            margin-bottom: 10px;
-            text-align: justify; /* Justify text */
+            margin-bottom: 20px; /* Increased margin */
+            text-align: justify;
         }
 
         ul {
             list-style: none;
             padding: 0;
-        }
-
-        li {
-            margin-bottom: 5px;
         }
 
         a {
@@ -105,50 +101,50 @@
             text-decoration: underline;
         }
 
-        .icon {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            margin-right: 5px;
+        li {
+            margin-bottom: 10px; /* Increased margin */
         }
 
         .section-header {
             border-top: 1px solid rgba(0, 0, 0, 0.2);
-            padding-top: 20px;
-            margin-top: 20px;
+            padding-top: 40px; /* Increased padding */
+            margin-top: 40px; /* Increased margin */
         }
 
-                .section {
-            flex: 1; /* Each section takes equal width */
-            padding: 20px; /* Add some padding around the sections */
-            box-sizing: border-box; /* Include padding in width calculation */
+        .section {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left; /* Align text to the left within sections */
         }
 
         .section h2, .section h1 {
-            margin-bottom: 10px;
+            margin-bottom: 15px; /* Increased margin */
         }
 
         .section ul {
-            list-style-type: disc; /* Use bullet points */
+            list-style-type: disc;
             padding-left: 20px;
+            margin-bottom: 20px; /* Increased margin */
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .flex-container {
-                flex-direction: column; /* Stack sections vertically */
-            }
-
-            .section {
-                flex: 1; /* Each section takes full width */
-            }
+        .research-image { /* Style for research images */
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
 
         /* Responsive design */
         @media (max-width: 768px) {
             .flex-container {
                 flex-direction: column;
-                align-items: center; /* Center items on smaller screens */
+                align-items: center;
+            }
+
+            .section {
+                flex: 1; /* Each section takes full width */
             }
 
             .right img {
@@ -168,7 +164,6 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    
         <div class="flex-container">
             <div class="section">
                 <h2>Research Interests</h2>
@@ -196,6 +191,7 @@
                 <h1>Ongoing Research Highlights</h1>
 
                 <h2>On-Time Delivery Delay Prediction</h2>
+                <img class="research-image" src="images/delivery_prediction.jpg" alt="Delivery Prediction"> </img>
                 <ul>
                     <li>Implementing <strong>LSTM, BiLSTM, and GRU</strong> for prediction.</li>
                     <li>Feature selection using <strong>Autoencoders and Variance Threshold</strong>.</li>
@@ -204,6 +200,7 @@
 
             <div class="section">
                 <h2>Logistics Forwarder Selection Using Supervised Machine Learning</h2>
+                <img class="research-image" src="images/logistics_selection.jpg" alt="Logistics Selection"> </img>
                 <ul>
                     <li>Implementing <strong>RF, Adaboost, and XGBoost with k-fold cross-validation</strong> for supplier selection.</li>
                 </ul>
@@ -211,6 +208,7 @@
 
             <div class="section">
                 <h2>AI in Transportation Logistics - A Systematic Review</h2>
+                <img class="research-image" src="images/ai_transportation.jpg" alt="AI in Transportation"> </img>
                 <ul>
                     <li>Exploring applications of <strong>AI in transportation logistics</strong> (academic and industrial applications).</li>
                 </ul>
