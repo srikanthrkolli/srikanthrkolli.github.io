@@ -286,16 +286,15 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .section {
-            flex: 1 0 45%;
+        .section { /* This style should apply to ALL sections */
+            flex: 1 0 45%; /* Adjust as needed */
             padding: 40px;
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Consistent margin between sections */
         }
-
         .section:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -304,7 +303,6 @@
         .section h1, .section h2, .section h3 {
             margin-bottom: 20px;
         }
-
         .styled-list {
             list-style-type: none; /* Remove default bullets */
             padding-left: 0;
@@ -401,56 +399,28 @@
             </div>
         </div>
 
-        <div class="section-header"></div>
-
-        <div class="flex-container">
-            <div class="left">
-                <h2>Access My Research Papers</h2>
+        <div class="container">
+        <div class="section-header"></div>  <div class="flex-container">
+            <div class="left section">  <h2>Access My Research Papers</h2>
                 <ul>
-                    <li>📖 <a
-                            href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli">ResearchGate</a>
-                    </li>
+                    <li>📖 <a href="https://www.researchgate.net/lab/Srikanth-R-Kollis-CTAC-Innovation-Lab-Sai-Srikanth-Reddy-Kolli">ResearchGate</a></li>
                     <li>🌐 <a href="https://orcid.org/0009-0005-2196-9632">ORCID ID</a></li>
                 </ul>
                 <br>
-                <h2>Explore My Work</h2>
+                <h2>Check Out Latest Content</h2>
                 <ul>
-                    <li><a href="resume.html">About Me</a></li>
-                    <li><a href="research.html">Current Research Highlights</a></li>
-                    <li><a href="interests.html">Personal Interests</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
 
-            <div class="right">
-                <h2>Connect with Me</h2>
+            <div class="right section">  <h2>Connect with Me</h2>
                 <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/srikanth-r-kolli/">
-                            <img class="icon"
-                                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                                alt="LinkedIn Icon">LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/srikanthr_kolli">
-                            <img class="icon"
-                                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                                alt="Instagram Icon">Instagram (Personal)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/shotsbytac">
-                            <img class="icon"
-                                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                                alt="Instagram Icon">Instagram (Photography)
-                        </a>
-                    </li>
+                    <li><a href="https://www.linkedin.com/in/srikanth-r-kolli/"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/srikanthr_kolli"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">Instagram (Personal)</a></li>
+                    <li><a href="https://www.instagram.com/shotsbytac"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">Instagram (Photography)</a></li>
                     <li>
                         <a href="mailto:srikanthrkolli@gmail.com">
-                            <img class="icon"
-                                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
-                                alt="Gmail Icon">srikanthrkolli@gmail.com
+                            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail Icon">srikanthrkolli@gmail.com
                         </a> |
                         <a href="mailto:skolli3@binghamton.edu">skolli3@binghamton.edu</a>
                     </li>
