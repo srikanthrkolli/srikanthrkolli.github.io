@@ -42,15 +42,23 @@
         nav a:hover {
             color: #0071e3;
         }
-
         .container {
             max-width: 960px;
             margin: 20px auto;
             padding: 20px;
         }
 
+        /* Profile Header Styles */
+        .profile-header {
+            display: flex; /* Enable flexbox for profile header */
+            align-items: flex-start; /* Align items to the top */
+            justify-content: space-between; /* Space between info and image */
+            gap: 40px; /* Adjust gap as needed */
+            margin-bottom: 40px; /* Space below profile header */
+        }
+
         .profile-info {
-            flex: 1;
+            flex: 1; /* Profile info takes available space */
         }
 
         .profile-info h1 {
@@ -65,8 +73,7 @@
         }
 
         .profile-image-container {
-            width: 300px;
-            margin-left: 20px;
+            width: 300px; /* Fixed width for image container */
         }
 
         .profile-image {
@@ -76,85 +83,65 @@
             display: block;
         }
 
-
-        .flex-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 40px;
+        /* Section Styles */
+        .section {
+            margin-bottom: 40px; /* Space between sections */
         }
 
-        .left {
-            flex: 1;
-        }
-
-        .right {
-            text-align: right;
-        }
-
-        .right img {
-            max-width: 250px; /* Adjust image size */
-            height: auto;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        h2 {
+        .section h2 {
             font-size: 1.8em;
             margin-bottom: 10px;
         }
 
-        p {
-            line-height: 1.6;
-            margin-bottom: 10px;
-            text-align: justify; /* Justify text */
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
+        .section h3 {
+            font-size: 1.2em; /* Smaller heading for subsections */
             margin-bottom: 5px;
         }
 
-        a {
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .section ul {
+            list-style: disc; /* Bullet points */
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section a {
             color: #0071e3;
             text-decoration: none;
             font-weight: 500;
         }
 
-        a:hover {
+        .section a:hover {
             text-decoration: underline;
         }
 
-        .icon {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-
+        /* Section Header */
         .section-header {
             border-top: 1px solid rgba(0, 0, 0, 0.2);
             padding-top: 20px;
-            margin-top: 20px;
+            margin-bottom: 40px; /* Space after header */
         }
 
+
+        /* Media Queries */
         @media (max-width: 768px) {
-            .flex-container {
-                height:300px;
-                flex-direction: column;
-                align-items: center; /* Center items on smaller screens */
+            .profile-header {
+                flex-direction: column; /* Stack on smaller screens */
+                align-items: center; /* Center horizontally */
             }
 
-            .right img {
-                max-width: 100%;
+            .profile-image-container {
+                margin: 20px auto; /* Center image */
+                width: 250px; /* Slightly smaller image */
+            }
+
+            .section {
+                margin-bottom: 30px; /* Adjust spacing */
             }
         }
     </style>
@@ -171,8 +158,8 @@
         </ul>
     </nav>
     <div class="container">
-        <!-- Profile Header -->
-        <section class="profile-header">
+
+        <div class="profile-header">
             <div class="profile-info">
                 <h1>Sai Srikanth R. Kolli</h1>
                 <div>
@@ -193,11 +180,9 @@
             <div class="profile-image-container">
                 <img class="profile-image" src="images/linkedin.png" alt="Sai Srikanth R. Kolli">
             </div>
-        </section>
+        </div>
 
-        <!-- Education & Certifications -->
-        <section>
-            <h2>Education & Certifications</h2>
+        <div class="section-header"></div>  <section class="section">  <h2>Education & Certifications</h2>
             <h3>Binghamton University (SUNY), Binghamton, New York, USA</h3>
             <p>School of System Science and Industrial Engineering (SSIE), Thomas J. Watson College of Engineering and Applied Sciences</p>
             <ul>
@@ -218,9 +203,7 @@
             </ul>
         </section>
 
-        <!-- Professional Experience -->
-        <section>
-            <h2>Professional Experience</h2>
+        <div class="section-header"></div>  <section class="section">  <h2>Professional Experience</h2>
             <h3>Graduate Research Assistant & Project Manager (April 2022 - Present)</h3>
             <p>Watson Institute for Systems Excellence (WISE), School of SSIE, Binghamton University (SUNY), New York, USA</p>
             <p>Department of Business Development & Supply Chain Operations | Foxconn Industrial Internet (FII), Wisconsin, USA</p>
@@ -230,6 +213,7 @@
                 <li>Designed an interactive UI for quotation generation, improving lead time.</li>
             </ul>
         </section>
+
 
         <!-- Conference Presentations -->
         <section>
