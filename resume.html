@@ -186,6 +186,16 @@
             left: 0;
             top: 0;
         }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px; /* Adjust spacing */
+        }
+        
+        .education, .certifications {
+            flex: 1;
+        }
+        
         /* Responsive design */
         @media (max-width: 768px) {
             .flex-container {
@@ -241,32 +251,40 @@
                 </div>
             </div>
         </div>
-        <div class="section-header"></div>  <section class="section">  <h2>Education & Certifications</h2>
-            <h3>Binghamton University (SUNY)</h3>
-            <div>School of System Science and Industrial Engineering (SSIE) <br>
-                Thomas J. Watson College of Engineering and Applied Sciences | Binghamton, New York, USA
-            </div>
-            <br>
-            <ul class="styled-list">
-                <li><em>Ph.D. in Industrial and Systems Engineering (Ongoing)</em></li>
-                <li><em>Master’s in Industrial and Systems Engineering (May 2023)</em></li>
-            </ul>
-            <br>
-            <h3>Mahindra École Centrale (Mahindra University)</h3>
-            <p>École Centrale School of Engineering | Hyderabad, Telangana, India</p>
-            <ul class="styled-list">
-                <li><em>Bachelor's in Mechanical Engineering (May 2019)</em></li>
-            </ul>
-            <br>
-            <h3>Certifications</h3>
-            <br>
-            <ul class="styled-list">
-                <li><em><a href="https://www.credly.com/badges/6532569c-adce-42e9-8ae3-ad8d014df99c?source=linked_in_profile" target="_blank">Project Management Essentials (Jan 2022)</a></em></li>
-                <li><em><a href="https://www.credly.com/badges/37f8ac2c-b8c4-4496-9c16-7a049eebc9b0/public_url" target="_blank">Microsoft Certified: Azure AI Fundamentals (Oct 2024)</a></em></li>
-            </ul>
-        </section>
         
-        <div class="section-header"></div>  <section class="section">  <h2>Professional Experience</h2>
+        <div class="section-header"></div>  
+        <section class="section flex-container">
+            <!-- Left Column: Education -->
+            <div class="education">
+                <h2>Education</h2>
+                <h3>Binghamton University (SUNY)</h3>
+                <div>School of System Science and Industrial Engineering (SSIE) <br>
+                    Thomas J. Watson College of Engineering and Applied Sciences | Binghamton, New York, USA
+                </div>
+                <ul class="styled-list">
+                    <li><em>Ph.D. in Industrial and Systems Engineering (Ongoing)</em></li>
+                    <li><em>Master’s in Industrial and Systems Engineering (May 2023)</em></li>
+                </ul>
+        
+                <h3>Mahindra École Centrale (Mahindra University)</h3>
+                <p>École Centrale School of Engineering | Hyderabad, Telangana, India</p>
+                <ul class="styled-list">
+                    <li><em>Bachelor's in Mechanical Engineering (May 2019)</em></li>
+                </ul>
+            </div>
+        
+            <!-- Right Column: Certifications -->
+            <div class="certifications">
+                <h2>Certifications</h2>
+                <ul class="styled-list">
+                    <li><em><a href="https://www.credly.com/badges/6532569c-adce-42e9-8ae3-ad8d014df99c?source=linked_in_profile" target="_blank">Project Management Essentials (Jan 2022)</a></em></li>
+                    <li><em><a href="https://www.credly.com/badges/37f8ac2c-b8c4-4496-9c16-7a049eebc9b0/public_url" target="_blank">Microsoft Certified: Azure AI Fundamentals (Oct 2024)</a></em></li>
+                </ul>
+            </div>
+        </section>    
+        
+        <div class="section-header"></div>
+        <section class="section">  <h2>Professional Experience</h2>
             <h3>Graduate Research Assistant & Project Manager (April 2022 - Present)</h3>
             <p>Watson Institute for Systems Excellence (WISE), School of SSIE, Binghamton University (SUNY), New York, USA</p>
             <p>Department of Business Development & Supply Chain Operations | Foxconn Industrial Internet (FII), Wisconsin, USA</p>
