@@ -248,7 +248,86 @@
         .courtesy p {
             margin-bottom: 10px;
         }
-        
+           <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Research Highlights</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 33.33%; /* Three items per view */
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .carousel-item h2 {
+            font-size: 1.4em;
+            margin: 15px 0 10px;
+        }
+
+        .carousel-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .carousel-item ul li {
+            margin-bottom: 8px;
+        }
+
+        .carousel-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #0071e3;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item {
+                min-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -287,42 +366,66 @@
         <div class="section-header">
             <h2>Ongoing Research Highlights</h2>
         </div>
-
-        <div class="flex-container">
-            <div class="section">
-                <h2>On-Time Delivery Delay Prediction</h2>
-                <img class="research-image" src="images/delivery_prediction.png" alt="Delivery Prediction">
-                <ul>
-                    <li>Implementing <strong>LSTM, BiLSTM, and GRU</strong> for delivery delay prediction.</li>
-                    <li>Feature selection includes <strong>neural network based - Autoencoders and filter-based method - Variance Threshold.</strong></li>
-                </ul>
+    
+        <div class="carousel-container">
+            <div class="carousel-track">
+    
+                <div class="carousel-item">
+                    <h2>On-Time Delivery Delay Prediction</h2>
+                    <img src="images/delivery_prediction.png" alt="Delivery Prediction">
+                    <ul>
+                        <li>Implementing <strong>LSTM, BiLSTM, and GRU</strong> for delivery delay prediction.</li>
+                        <li>Feature selection includes <strong>Autoencoders</strong> and <strong>Variance Threshold</strong>.</li>
+                    </ul>
+                </div>
+    
+                <div class="carousel-item">
+                    <h2>Logistics Forwarder Selection Using Supervised ML</h2>
+                    <img src="images/logistics_selection.png" alt="Logistics Selection">
+                    <ul>
+                        <li>Using <strong>RF, AdaBoost, and XGBoost</strong> with k-fold cross-validation.</li>
+                        <li>Two models: delivery classification and forwarder performance evaluation.</li>
+                    </ul>
+                </div>
+    
+                <div class="carousel-item">
+                    <h2>AI in Transportation Logistics - A Review</h2>
+                    <img src="images/ai_transportation.png" alt="AI in Transportation">
+                    <ul>
+                        <li>Exploring <strong>AI applications</strong> in academic and industrial transportation logistics.</li>
+                    </ul>
+                </div>
+    
+                <div class="carousel-item">
+                    <h2>Repair Wait Time Prediction Using DL Models</h2>
+                    <img src="images/repair.png" alt="Repair Wait Time">
+                    <ul>
+                        <li>Predicting PCB repair wait times using <strong>LSTMs</strong> to enhance manufacturing efficiency.</li>
+                    </ul>
+                </div>
+    
             </div>
-
-            <div class="section">
-                <h2>Logistics Forwarder Selection Using Supervised Machine Learning</h2>
-                <img class="research-image" src="images/logistics_selection.png" alt="Logistics Selection">
-                <ul>
-                    <li>Implementing <strong>RF, Adaboost, and XGBoost with k-fold cross-validation</strong> for forwarder selection.</li>
-                    <li>The procedure includes two models - a multiclassification of deliveries and a multi-classification of forwarders performance based on each delivery.</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>AI in Transportation Logistics - A Systematic Review</h2>
-                <img class="research-image" src="images/ai_transportation.png" alt="AI in Transportation">
-                <ul>
-                    <li>Exploring applications of <strong>AI in transportation logistics</strong> (academic and industrial applications).</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Repair Wait Time Prediction Using Deep Learning Models</h2>
-                <img class="research-image" src="images/repair.png" alt="Repair">
-                <ul>
-                    <li>Leveraging the techniques of deep learning models such as <strong>LSTMs</strong> to predict the wait time of printed circuit boards (PCB) for enhacing the manufacturing operations.</li>
-                </ul>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="moveToSlide(0)"></span>
+                <span class="dot" onclick="moveToSlide(1)"></span>
             </div>
         </div>
+    
+        <script>
+            const track = document.querySelector('.carousel-track');
+            const dots = document.querySelectorAll('.dot');
+            const slideWidth = document.querySelector('.carousel-item').offsetWidth;
+    
+            function moveToSlide(slideIndex) {
+                track.style.transform = `translateX(-${slideIndex * 100}%)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[slideIndex].classList.add('active');
+            }
+    
+            window.addEventListener('resize', () => {
+                moveToSlide(0); // Reset on resize for responsiveness
+            });
+        </script>
 
         <div class="courtesy">
             <p>© Images are created using LLMs - Gemini and ChatGPT. Website features inspired from the design similar to apple website, which is classified as one of the best and elegant designs</p>
