@@ -180,6 +180,143 @@
                 max-width: 100%;
             }
         }
+        /* Responsive adjustments */
+        @media (max-width: 900px) { /* Adjust breakpoint as needed */
+            .section {
+                flex: 1 0 45%; /* Two columns on medium screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                flex: 1 0 100%; /* Full width on small screens */
+            }
+        }
+        .profile-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .profile-header:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-info {
+            flex: 1 0 50%;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .profile-info div {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .profile-info p {
+            font-size: 1.1em;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .profile-image-container {
+            flex: 1 0 30%;
+            text-align: center;
+        }
+
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section { /* This style should apply to ALL sections */
+            flex: 1 0 45%; /* Adjust as needed */
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 20px; /* Consistent margin between sections */
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .section h1, .section h2, .section h3 {
+            margin-bottom: 20px;
+        }
+        .styled-list {
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+        
+        .styled-list li {
+            font-style: regular;
+            padding-left: 20px; /* Space for the custom bullet */
+            position: relative;
+        }
+        
+        .styled-list li::before {
+            font-size: 1.2em;
+            color: #0071e3;
+            position: absolute;
+            left: 0;
+            top: 2px; /* Adjust vertical position if needed */
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .education,
+        .certifications {
+            flex: 1 0 45%;
+        }
+
+        .conference-name {
+            font-weight: bold;
+        }
+
+        .presentation-title {
+            font-style: italic;
+        }
+
+        /* Courtesy section */
+        .courtesy {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+            padding: 10px 0; /* Reduced padding */
+            /* Removed background-color, border, border-radius, box-shadow, transition */
+            max-width: 1200px; /* Keep max-width for consistent width */
+            margin: 40px auto; /* Center the courtesy */
+        }
+        .courtesy:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .courtesy p {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
